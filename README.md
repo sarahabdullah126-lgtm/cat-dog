@@ -1,19 +1,28 @@
-Hocam merhaba,
-İstenilen ödev kapsamında Cat vs Dog Image Classification projesini hazırladım.
+This project is a simple Deep Learning image classification model that predicts whether an uploaded image belongs to a Cat or a Dog.
 
-Proje içeriği:
+Project Structure
 
-GitHub Proje Linki:
-https://github.com/sarahabdullah126-lgtm
+train.py → Training script
 
-DockerHub Repository: https://hub.docker.com/u/banabdullah
+app.py → Web interface (Flask)
 
-Proje ZIP Dosyası
-Ve 
-projenin web ara yüzünden bir ekran görüntüsü
-Aşağıda paylaşıyorum 
+predict.py → Model prediction
 
-Teşekkürler hocam 
+model/cat_dog_model.h5 → Saved trained model
 
-Öğrenci adı : Sarah Abdullah 
-Öğrenci numarası:251137151
+Dockerfile → Docker environment configuration
+
+requirements.txt → Dependencies
+
+Docker
+
+The project is prepared to run inside a Docker container.
+DockerHub Repository:
+https://hub.docker.com/u/sarahabdullah
+
+
+How to Run (optional for instructor) :
+
+docker build -t cat_dog_app .
+
+docker run -p 5000:5000 cat_dog_app
